@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Book Listing App</string>
+    <string name="query_hint">Search for books</string>
+    <string name="no_author">No known author</string>
+    <string name="no_internet">No internet connection.</string>
+    <string name="empty">No books. Try searching for something.</string>
+    <string name="total_results">%1$d result(s) available</string>
+    <string name="max_results">You can only request up to 40 results.</string>
+</resources>

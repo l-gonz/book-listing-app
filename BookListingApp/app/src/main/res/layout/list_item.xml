@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/base_margin">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="66dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/base_margin"
+        android:layout_marginLeft="@dimen/base_margin"
+        tools:src="@drawable/content"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/base_margin"
+        android:layout_marginLeft="@dimen/base_margin"
+        android:layout_marginEnd="@dimen/base_margin"
+        android:layout_marginRight="@dimen/base_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/textColorDark"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="Los estudios del profesor Baxter en el tema de las mariposas" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="Professor Baxter &amp; esteemed friends"/>
+
+    </LinearLayout>
+
+    <!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="16sp"
+        tools:text="1995"/> -->
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/base_margin"
+        android:layout_marginEnd="@dimen/base_margin"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+</LinearLayout>
